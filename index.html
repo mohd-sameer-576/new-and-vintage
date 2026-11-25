@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New &amp; Vintage | Curated Menswear</title>
+
+    <!-- Google Fonts: Cormorant Garamond (Refined Editorial Serif) & Plus Jakarta Sans (Clean Modern Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Custom Configuration -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Cormorant Garamond"', "Georgia", "serif"],
+              sans: ['"Plus Jakarta Sans"', "system-ui", "sans-serif"],
+            },
+            colors: {
+              charcoal: {
+                950: "#0E1116",
+                900: "#141820",
+                800: "#1C222D",
+                700: "#272F3D",
+              },
+              cream: {
+                50: "#FAF8F5",
+                100: "#F3EFEA",
+                200: "#E5DEC9",
+                300: "#C8BFA8",
+              },
+              brass: {
+                400: "#D4B475",
+                500: "#C5A059",
+                600: "#A3813E",
+              },
+            },
+            boxShadow: {
+              card: "0 20px 40px -15px rgba(0, 0, 0, 0.55)",
+              "brass-glow": "0 8px 24px -6px rgba(197, 160, 89, 0.25)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="min-h-screen bg-charcoal-950 text-cream-50 font-sans antialiased selection:bg-brass-500 selection:text-charcoal-950 flex flex-col justify-between relative overflow-x-hidden"
+  >
+    <!-- Subtle Radial Ambient Backdrop Glow -->
+    <div
+      aria-hidden="true"
+      class="pointer-events-none fixed inset-0 flex justify-center items-start overflow-hidden"
+    >
+      <div
+        class="w-[560px] h-[560px] rounded-full bg-brass-500/5 blur-3xl -translate-y-1/2"
+      ></div>
+    </div>
+
+    <!-- Main Centered Container -->
+    <main
+      class="relative z-10 w-full max-w-md mx-auto px-5 pt-10 pb-8 sm:pt-14 sm:pb-12 flex-grow flex flex-col justify-center"
+    >
+      <!-- =====================================================================
+         HEADER SECTION: Custom Monogram Emblem, Store Name & Tagline
+    ====================================================================== -->
+      <header class="text-center mb-9">
+        <!-- Custom SVG Monogram Crest (N & V) -->
+       <div class="mx-auto w-20 h-20 sm:w-24 sm:h-24 mb-4">
+           <img src="img1.png" alt="">
+
+       </div>
+
+        <!-- Store Name -->
+        <h1
+          class="font-serif text-4xl sm:text-[42px] font-semibold tracking-tight text-cream-50 leading-none"
+        >
+          New
+          <span class="italic font-normal text-brass-400">&amp;</span> Vintage
+        </h1>
+
+        <!-- Decorative Divider -->
+        <div class="flex items-center justify-center gap-3 my-3">
+          <span
+            class="h-px w-8 bg-gradient-to-r from-transparent to-brass-500/50"
+          ></span>
+          <span
+            class="text-[11px] uppercase tracking-[0.24em] text-brass-400 font-medium"
+            >Est. Menswear</span
+          >
+          <span
+            class="h-px w-8 bg-gradient-to-l from-transparent to-brass-500/50"
+          ></span>
+        </div>
+
+        <!-- Tagline -->
+        <p
+          class="text-sm sm:text-[15px] text-cream-300/90 font-normal tracking-wide max-w-xs mx-auto leading-relaxed"
+        >
+          Curated Menswear &bull; Classic &amp; Contemporary
+        </p>
+      </header>
+
+      <!-- =====================================================================
+         PRIMARY LINKS SECTION
+         OWNER INSTRUCTIONS: Replace the `href="..."` values below with your
+         real Instagram, WhatsApp Group, Google Maps, and Google Review links.
+    ====================================================================== -->
+      <nav aria-label="Store Links" class="space-y-3.5">
+        <!-- 1. INSTAGRAM LINK -->
+        <!-- TODO: Replace href with your Instagram profile URL (e.g., https://instagram.com/newandvintage) -->
+        <a
+          href="https://www.instagram.com/newandvintage.hyd?cnvx=c2RoNWloaTJhMjc0"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group relative flex items-center justify-between w-full p-4 rounded-xl bg-charcoal-900/90 hover:bg-charcoal-800 border border-cream-200/10 hover:border-brass-500/60 shadow-card transition-all duration-200 active:scale-[0.985] focus:outline-none focus:ring-2 focus:ring-brass-500/60"
+        >
+          <div class="flex items-center gap-4">
+            <!-- Icon Container -->
+            <div
+              class="w-11 h-11 rounded-lg bg-charcoal-800 group-hover:bg-brass-500/15 border border-cream-200/10 group-hover:border-brass-500/40 flex items-center justify-center text-brass-400 transition-colors duration-200 shrink-0"
+            >
+              <!-- Instagram SVG Icon -->
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg>
+            </div>
+            <!-- Label & Subtitle -->
+            <div class="text-left">
+              <span
+                class="block text-[15px] font-semibold text-cream-50 group-hover:text-brass-400 transition-colors"
+              >
+                Instagram
+              </span>
+              <span class="block text-xs text-cream-300/75 mt-0.5">
+                Lookbooks, styling &amp; daily drops
+              </span>
+            </div>
+          </div>
+          <!-- Right Arrow -->
+          <svg
+            class="w-4 h-4 text-cream-300/50 group-hover:text-brass-400 group-hover:translate-x-0.5 transition-all shrink-0"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </a>
+
+        <!-- 2. WHATSAPP GROUP LINK (VIP / NEW ARRIVALS) -->
+        <!-- TODO: Replace href with your WhatsApp Group invite URL (e.g., https://chat.whatsapp.com/YourInviteCode) -->
+        <a
+          href="https://chat.whatsapp.com/IyA009JWRaW5FWsKiH4u3W?mode=gi_t"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group relative flex items-center justify-between w-full p-4 rounded-xl bg-charcoal-900/90 hover:bg-charcoal-800 border border-brass-500/35 hover:border-brass-400 shadow-card transition-all duration-200 active:scale-[0.985] focus:outline-none focus:ring-2 focus:ring-brass-500/60"
+        >
+          <div class="flex items-center gap-4">
+            <!-- Icon Container -->
+            <div
+              class="w-11 h-11 rounded-lg bg-brass-500/15 group-hover:bg-brass-500/25 border border-brass-500/30 flex items-center justify-center text-brass-400 transition-colors duration-200 shrink-0"
+            >
+              <!-- WhatsApp SVG Icon -->
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
+                <path
+                  d="M9 10a.5.5 0 0 0 1 0V9a.5.5 0 0 0-1 0v1a5 5 0 0 0 5 5h1a.5.5 0 0 0 0-1h-1a.5.5 0 0 0 0 1"
+                />
+              </svg>
+            </div>
+            <!-- Label & Subtitle -->
+            <div class="text-left">
+              <div class="flex items-center gap-2">
+                <span
+                  class="text-[15px] font-semibold text-cream-50 group-hover:text-brass-400 transition-colors"
+                >
+                  WhatsApp VIP Group
+                </span>
+                <span
+                  class="px-1.5 py-0.5 text-[10px] uppercase tracking-wider font-semibold rounded bg-brass-500/20 text-brass-400 border border-brass-500/30"
+                >
+                  Early Access
+                </span>
+              </div>
+              <span class="block text-xs text-cream-300/75 mt-0.5">
+                First dibs on vintage pieces &amp; new arrivals
+              </span>
+            </div>
+          </div>
+          <!-- Right Arrow -->
+          <svg
+            class="w-4 h-4 text-cream-300/50 group-hover:text-brass-400 group-hover:translate-x-0.5 transition-all shrink-0"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </a>
+
+        <!-- 3. STORE LOCATION LINK (GOOGLE MAPS) -->
+        <!-- TODO: Replace href with your Google Maps share link (e.g., https://maps.app.goo.gl/YourLocationPin) -->
+        <a
+          href="https://maps.app.goo.gl/5gHrP9ScEUmpWPeN9?g_st=aw"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group relative flex items-center justify-between w-full p-4 rounded-xl bg-charcoal-900/90 hover:bg-charcoal-800 border border-cream-200/10 hover:border-brass-500/60 shadow-card transition-all duration-200 active:scale-[0.985] focus:outline-none focus:ring-2 focus:ring-brass-500/60"
+        >
+          <div class="flex items-center gap-4">
+            <!-- Icon Container -->
+            <div
+              class="w-11 h-11 rounded-lg bg-charcoal-800 group-hover:bg-brass-500/15 border border-cream-200/10 group-hover:border-brass-500/40 flex items-center justify-center text-brass-400 transition-colors duration-200 shrink-0"
+            >
+              <!-- Map Pin SVG Icon -->
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <!-- Label & Subtitle -->
+            <div class="text-left">
+              <span
+                class="block text-[15px] font-semibold text-cream-50 group-hover:text-brass-400 transition-colors"
+              >
+                Visit Our Store
+              </span>
+              <span class="block text-xs text-cream-300/75 mt-0.5">
+                Directions &amp; address on Google Maps
+              </span>
+            </div>
+          </div>
+          <!-- Right Arrow -->
+          <svg
+            class="w-4 h-4 text-cream-300/50 group-hover:text-brass-400 group-hover:translate-x-0.5 transition-all shrink-0"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </a>
+
+        <!-- 4. GOOGLE REVIEW LINK -->
+        <!-- TODO: Replace href with your direct Google Business Review link (e.g., https://g.page/r/YourPlaceID/review) -->
+        <a
+          href="https://search.google.com/local/writereview?placeid=ChIJY5CKcXuXyzsRmr-7Yr3Ly4k"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="group relative flex items-center justify-between w-full p-4 rounded-xl bg-charcoal-900/90 hover:bg-charcoal-800 border border-cream-200/10 hover:border-brass-500/60 shadow-card transition-all duration-200 active:scale-[0.985] focus:outline-none focus:ring-2 focus:ring-brass-500/60"
+        >
+          <div class="flex items-center gap-4">
+            <!-- Icon Container -->
+            <div
+              class="w-11 h-11 rounded-lg bg-charcoal-800 group-hover:bg-brass-500/15 border border-cream-200/10 group-hover:border-brass-500/40 flex items-center justify-center text-brass-400 transition-colors duration-200 shrink-0"
+            >
+              <!-- Star Review SVG Icon -->
+              <svg
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+            </div>
+            <!-- Label & Subtitle -->
+            <div class="text-left">
+              <span
+                class="block text-[15px] font-semibold text-cream-50 group-hover:text-brass-400 transition-colors"
+              >
+                Leave a Google Review
+              </span>
+              <span class="block text-xs text-cream-300/75 mt-0.5">
+                Loved your fit? Share your experience
+              </span>
+            </div>
+          </div>
+          <!-- Right Arrow -->
+          <svg
+            class="w-4 h-4 text-cream-300/50 group-hover:text-brass-400 group-hover:translate-x-0.5 transition-all shrink-0"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <path d="M5 12h14" />
+            <path d="m12 5 7 7-7 7" />
+          </svg>
+        </a>
+      </nav>
+
+      <!-- =====================================================================
+         FOOTER SECTION: Store Hours & Share / Copy Link Button
+    ====================================================================== -->
+      <footer
+        class="mt-10 pt-6 border-t border-cream-200/10 text-center space-y-5"
+      >
+        <!-- Store Hours & Address Placeholder -->
+        <!-- TODO: Update with your actual store hours and neighborhood -->
+        <div class="space-y-1">
+          <p
+            class="text-xs uppercase tracking-[0.18em] text-brass-400/90 font-medium"
+          >
+            Store Hours
+          </p>
+          <p class="text-xs text-cream-300/80">
+            Mon – Sun: 11:00 AM – 11:00 PM
+          </p>
+        </div>
+
+        <!-- Share / Copy Page Link Action -->
+     
+        <!-- Copyright -->
+        <p class="text-[11px] text-cream-300/45 tracking-wide">
+          &copy; <span id="currentYear"></span> New &amp; Vintage Menswear. All
+          rights reserved.
+        </p>
+      </footer>
+    </main>
+
+    <!-- =====================================================================
+       TOAST NOTIFICATION (Displayed when link is copied)
+  ====================================================================== -->
+    <div
+      id="toastNotification"
+      role="status"
+      aria-live="polite"
+      class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 pointer-events-none opacity-0 translate-y-3 transition-all duration-300"
+    >
+      <div
+        class="flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-charcoal-800 text-cream-50 border border-brass-500/50 shadow-card text-xs font-medium whitespace-nowrap"
+      >
+        <svg
+          class="w-4 h-4 text-brass-400 shrink-0"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="20 6 9 17 4 12" />
+        </svg>
+        <span id="toastMessage">Store link copied to clipboard</span>
+      </div>
+    </div>
+
+    <!-- =====================================================================
+       INTERACTIVE SCRIPT: Copy Link & Toast Notification Logic
+  ====================================================================== -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Set current copyright year dynamically
+        const yearEl = document.getElementById("currentYear");
+        if (yearEl) {
+          yearEl.textContent = new Date().getFullYear();
+        }
+
+        const shareBtn = document.getElementById("sharePageBtn");
+        const toast = document.getElementById("toastNotification");
+        const toastMessage = document.getElementById("toastMessage");
+        let toastTimeout = null;
+
+        /**
+         * Displays a sleek non-blocking toast message at the bottom of the screen.
+         * @param {string} message - Text to show inside the toast.
+         */
+        function showToast(message) {
+          if (!toast || !toastMessage) return;
+
+          toastMessage.textContent = message;
+          toast.classList.remove("opacity-0", "translate-y-3");
+          toast.classList.add("opacity-100", "translate-y-0");
+
+          clearTimeout(toastTimeout);
+          toastTimeout = setTimeout(() => {
+            toast.classList.remove("opacity-100", "translate-y-0");
+            toast.classList.add("opacity-0", "translate-y-3");
+          }, 2600);
+        }
+
+        /**
+         * Copies the current page URL using an iframe-safe textarea fallback,
+         * and triggers native Web Share on supported mobile devices if available.
+         */
+        function copyPageLink() {
+          const pageUrl = window.location.href;
+
+          try {
+            const tempInput = document.createElement("textarea");
+            tempInput.value = pageUrl;
+            tempInput.setAttribute("readonly", "");
+            tempInput.style.position = "fixed";
+            tempInput.style.opacity = "0";
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            tempInput.setSelectionRange(0, 99999);
+
+            const successful = document.execCommand("copy");
+            document.body.removeChild(tempInput);
+
+            if (successful) {
+              showToast("Link copied! Ready to share.");
+            } else {
+              showToast("Unable to copy link automatically.");
+            }
+          } catch (err) {
+            console.error("Copy failed:", err);
+            showToast("Unable to copy link.");
+          }
+        }
+
+        if (shareBtn) {
+          shareBtn.addEventListener("click", copyPageLink);
+        }
+      });
+    </script>
+  </body>
+</html>
